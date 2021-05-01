@@ -136,7 +136,7 @@ TEST_CASE("BUILD")
     GeneSplicer player_gs(board, City::Atlanta);
     FieldDoctor player_fd(board, City::Atlanta);
 
-    CHECK_THROWS(player_d.build()));
+    CHECK_THROWS(player_d.build());
     player_d.take_card(City::Atlanta);
     CHECK_NOTHROW(player_d.build());
     CHECK_NOTHROW(player_oe.build());
